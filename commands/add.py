@@ -1,5 +1,5 @@
 from model import add_item
-from input import new_item_info
+from input import info_builder
 
 def add_command(inventory_path:str):
     """
@@ -8,5 +8,5 @@ def add_command(inventory_path:str):
     Args:
         inventory_path (str): the path of the inventory json file.
     """
-    item=new_item_info()
+    item=info_builder()
     add_item(item,inventory_path)
