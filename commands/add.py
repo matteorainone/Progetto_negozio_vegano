@@ -8,5 +8,5 @@ def add_command(inventory_path:str):
     Args:
         inventory_path (str): the path of the inventory json file.
     """
-    item=info_builder()
+    item=info_builder(inventory_path)
     add_item(item,inventory_path)
